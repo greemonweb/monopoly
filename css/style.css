@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*HEADER*/
+#logo{
+    width: 25%;
+}
+
+/*CONTENT*/
+#board{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    width: 550px;
+    height: 550px;
+    background: url("./../imgs/monopoly-board.jpg") no-repeat;
+    background-size: contain;
+    
+}
+
+.square{
+    position: relative;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+}
+.square:first-of-type{
+    top: 500px;
+    left: 500px;
+}
+
+.central-boxes{
+    position: fixed;
+    width: 105px;
+    height: 70px;
+    border: solid 2px red;
+}
+/*FOOTER*/
